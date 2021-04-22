@@ -6,7 +6,7 @@
 // `console.log(twofer()) ---> "Two for me and one for you" `
 
 let who;
-const twofer = (who = "you") => {
+const twofer = (who === "you") => 
   return `Two for me and one for ${who}`;
 };
 

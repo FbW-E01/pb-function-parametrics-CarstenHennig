@@ -4,8 +4,8 @@ const sum = (...val) => {
   let result = 0;
   for (let i = 0; i < val.length; i++) {
     result += val[i];
+    return result;
   }
-  return result;
 };
 
 console.log(sum(1)); // -> 1

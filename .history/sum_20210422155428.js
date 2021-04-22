@@ -1,11 +1,10 @@
 // Create a function sum which accepts any amount of numbers and return the sum of their addition
 
-const sum = (...val) => {
-  let result = 0;
-  for (let i = 0; i < val.length; i++) {
-    result += val[i];
-  }
-  return result;
+const sum = (val1, val2, val3) => {
+  let val1 = 0;
+  let val2 = 0;
+  let val3 = 0;
+  return val1 + val2 + val3;
 };
 
 console.log(sum(1)); // -> 1

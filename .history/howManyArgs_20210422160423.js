@@ -8,9 +8,10 @@
 // `console.log(howManyArgs("better")) ---> 1`
 
 const howManyArgs = (...arg) => {
+  console.log(array1);
   return arg.length;
 };
 
-console.log(howManyArgs()); // -> 0
+console.log(howManyArgs(" ")); // -> 0
 console.log(howManyArgs(1, false, "hello")); // -> 3
 console.log(howManyArgs("better")); // -> 1

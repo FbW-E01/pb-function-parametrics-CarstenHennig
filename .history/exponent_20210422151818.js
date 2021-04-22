@@ -10,8 +10,8 @@
 // `console.log(exponent(3)) ---> 9`
 
 const exponent = (num, exp) => {
-  let result = 1;
-  if (exp == null) {
+  let result;
+  if (exp == "") {
     result *= num;
     return result;
   } else {

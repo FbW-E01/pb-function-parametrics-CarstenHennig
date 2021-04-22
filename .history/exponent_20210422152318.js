@@ -11,8 +11,8 @@
 
 const exponent = (num, exp) => {
   let result = 1;
-  if (exp == null) {
-    result *= num;
+  if (exp == "") {
+    result = num++;
     return result;
   } else {
     for (let i = 0; i < exp; i++) {

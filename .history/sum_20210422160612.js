@@ -5,7 +5,6 @@ const sum = (...val) => {
   for (let i = 0; i < val.length; i++) {
     result += val[i];
   }
-  return result;
 };
 
 console.log(sum(1)); // -> 1

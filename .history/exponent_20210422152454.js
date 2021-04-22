@@ -11,7 +11,9 @@
 
 const exponent = (num, exp) => {
   let result = 1;
-  if (exp == null) {
+  if (exp == "") {
+    console.log(num);
+    console.log(result);
     result *= num;
     return result;
   } else {

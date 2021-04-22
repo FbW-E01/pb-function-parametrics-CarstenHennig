@@ -11,17 +11,16 @@
 
 const exponent = (num, exp) => {
   let result = 1;
-  if (exp == null) {
-    result *= num;
-    return result;
-  } else {
-    for (let i = 0; i < exp; i++) {
-      result *= num;
+
+  for (let i = 0; i < exp; i++) {
+    if ((exp = "")) {
+      result = num * num;
     }
-    return result;
+    result *= num;
   }
+
+  return result;
 };
 
 console.log(exponent(3, 3)); // -> 27
 console.log(exponent(3)); // -> 9
-console.log(exponent(2, 4));
