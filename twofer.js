@@ -1,6 +1,12 @@
 // Complete the function below so that it returns "Two for me and one for you" when no arguments are passed
 
-const twofer = who => {
+// 1. Complete the function in [`twofer.js`](./twofer.js) so that it returns "Two for me and one for you" when no arguments are passed\
+// e.g\
+// `console.log(twofer("Fran")) ---> "Two for me and one for Fran" ` \
+// `console.log(twofer()) ---> "Two for me and one for you" `
+
+let who;
+const twofer = (who = "you") => {
   return `Two for me and one for ${who}`;
 };
 
